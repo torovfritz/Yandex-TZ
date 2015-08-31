@@ -1,0 +1,281 @@
+/*============== DESKTOP ==================*/
+
+/* MAIN */
+
+.result-item ul {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.result-item li {
+    display: inline;
+    margin-right: 10px;
+    color: #808080;
+}
+
+    .result-item li:hover {
+        cursor: pointer;
+        color: #2895f1;
+    }
+
+.result-item div {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.result-item div p {
+    margin-bottom: 15px;
+}
+
+.result-item form {
+    width: 100%;
+}
+
+.result-item .styled-select {
+   display: inline-block;
+    width: 32%;
+   height: 33px;
+    padding: 0;
+    margin-bottom: 8px;
+   overflow: hidden;
+   background: url(../img/new-arrow.png) no-repeat right white;
+   border: 1px solid #ccc;
+    border-radius: 5px;
+   }
+
+.result-item select {
+    background: transparent;
+    width: 110%;
+    height: 33px;
+    border: none;
+    font-size: 12px;
+}
+
+.result-item input[type="button"] {
+    height: 33px;
+    margin: 5px 10px 15px 0;
+    padding: 0 15px;
+    border: none;
+    border-radius: 5px;
+    background: #2895f1;
+    color: white;
+    font-size: 13px;
+}
+
+.result-item span {
+    color: #808080;
+}
+
+.rest-section .rest {
+    overflow: auto;
+}
+.rest .rest-item {
+    width: 100%;
+    background: white;
+    border: 1px solid #eee;
+    position: relative;
+}
+.rest-item p {
+    line-height: 16px;
+}
+
+.rest-section .pic {
+    width: 40%;
+    height: 190px;
+    float: left;
+    background: url(../img/gambrinus.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.pic:hover .pic-number {
+    background: black;
+}
+.pic .pic-number {
+    height: 25px;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    position: relative;
+    top: 165px;
+    transition: all 200ms ease-in-out;
+}
+
+.about {
+    padding: 10px 20px 15px 20px;
+}
+
+
+.about p.address {
+    display: inline;
+    margin-right: 10px;
+    color: #333;
+}
+
+.about h1 {
+    font-size: 24px;
+    margin-top: 5px;
+    line-height: 30px;
+}
+
+.about p {
+    line-height: 20px;
+}
+
+.about span.distance {
+    font-size: 12px;
+    color: #808080;
+    padding-top: 3px;
+}
+span.distance:before {
+    content: url(../img/arrow.png);
+    margin-right: 5px;
+}
+
+.more-info {
+    margin-top: 20px;
+}
+
+.more-info .credit,
+.more-info p {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-right: 5%;
+    font-size: 12px;
+}
+
+.more-info .credit {
+    width: 51px;
+    height: 16px;
+    background: url(../img/credit.jpg);
+}
+
+.rest .rate {
+    height: 35px;
+    width: 35px;
+    border: 2px solid #27be14;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 8px 8px 8px 6px;
+    position: absolute;
+    top: 10px;
+    left: 87%;
+}
+
+.more-rest {
+    width: 100%;
+    overflow: auto;
+    padding: 15px 20px;
+    
+    border-top: 1px solid #eee;
+    background: white;
+}
+
+.more-rest .rest-near {
+    width: 25%;
+    float: left;
+}
+
+.more-rest p {
+    margin-bottom: 10px;
+}
+
+.more-rest .rest-near span {
+    box-sizing: border-box;
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    
+    background: black url(../img/rest-photo.jpg);
+    background-size: cover;
+}
+
+    .more-rest .rest-near:nth-child(2) span {
+        background-position: 210px;
+    }
+    
+    .more-rest .rest-near:nth-child(3) span {
+        background-position: 350px;
+    }
+
+    .more-rest .rest-near:nth-child(4) span {
+        background-position: 280px;
+    }
+
+    .more-rest .rest-near:nth-child(5) span {
+        background-position: 140px;
+    }
+
+.more-rest .rest-near:hover {
+    cursor: pointer;
+    color: #2895f1;
+}
+
+/*============== MOBILE ==================*/
+
+/* <-- 750 PX --> */
+
+@media (max-width: 750px) {
+    
+    .more-rest .rest-near span {
+    width: 100px;
+    height: 100px;
+}
+    
+    .more-rest .rest-near p br,
+    .more-rest .rest-near p i {
+    display: none;
+}
+    
+    .more-rest .rest-near:nth-child(2) span {
+        background-position: 300px;
+    }
+    
+    .more-rest .rest-near:nth-child(3) span {
+        background-position: 500px;
+    }
+
+    .more-rest .rest-near:nth-child(4) span {
+        background-position: 400px;
+    }
+
+    .more-rest .rest-near:nth-child(5) span {
+        background-position: 200px;
+    }
+
+}
+
+/* <-- 530 PX --> */
+
+@media (max-width: 530px) {
+    
+    .more-rest .rest-near span {
+    width: 70px;
+    height: 70px;
+}
+    .more-rest .rest-near p br,
+    .more-rest .rest-near p i {
+    display: inline;
+}
+        .more-rest .rest-near:nth-child(2) span {
+        background-position: 210px;
+    }
+    
+    .more-rest .rest-near:nth-child(3) span {
+        background-position: 350px;
+    }
+
+    .more-rest .rest-near:nth-child(4) span {
+        background-position: 280px;
+    }
+
+    .more-rest .rest-near:nth-child(5) span {
+        background-position: 140px;
+    }
+    
+}

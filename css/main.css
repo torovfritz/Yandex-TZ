@@ -1,0 +1,357 @@
+@import "grid.css";
+@import "reset.css";
+@import "typography.css";
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+li,
+a,
+p,
+input {
+    transition: all 200ms ease-in-out;
+}
+
+.header,
+.sub,
+.main,
+.nav,
+.footer {
+    min-width: 1024px;
+}
+div,
+input {
+    box-sizing: border-box;
+}
+.sub,
+.main,
+.nav {
+    background: #f5f5f5;
+}
+
+/* HEADER */
+
+.header {
+    height: 72px;
+    padding: 18px 28px;
+}
+.logo-section .logo-top {
+    display: inline-flex;
+    vertical-align: middle;
+}
+.logo-section form {
+    display: inline;
+    padding-left: 23px;
+}
+.logo-section input {
+    display: inline-block;
+}
+.logo-section input[type="text"],
+.logo-section input[type="button"] {
+    height: 36px;
+}
+.logo-section input[type="text"] {
+    width: 62%;
+    margin: 0;
+    padding: 0 0 0 10px;
+    border: 1px solid #e8e8e8;
+    font-size: 16px;
+    color: #333;
+}
+.logo-section input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #2895f1;
+}
+.logo-section input[type="button"] {
+    width: 97px;
+    padding-right: 13px;
+    margin-left: -6px;
+    border: none;
+    background: #2895f1;
+    color: white;
+    font-size: 16px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    line-height: 32px;
+}
+.account-section {
+    display: flex;
+    justify-content: flex-end;
+}
+.avatar {
+    width: 36px;
+    height: 36px;
+    background-color: #333;
+    border-radius: 50%;
+    background: url(../img/avatar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.account-section p {
+    display: inline-block;
+    line-height: 36px;
+    margin-left: 10px;
+}
+.account-section p:hover {
+    color: #2895f1;
+    cursor: pointer;
+}
+
+/* SUBHEADER */
+
+.sub {
+    padding: 20px 0;
+}
+.sub li {
+    display: inline-flex;
+    height: 28px;
+    padding: 0px 15px 0 10px;
+    line-height: 27px;
+    margin-left: 5px;
+    color: #808080;
+    border: 1px solid #ccc;
+    border-radius: 28px;
+}
+.sub li:before {
+    content: "+";
+    margin-right: 4px;
+    font-size: 20px;
+}
+.sub li:hover {
+    color: #2895f1;
+    background: white;
+    border-color: #2895f1;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+.menu-section li {
+    padding-left: 20px;
+    color: #808080;
+    display: block;
+    height: 40px;
+    line-height: 42px;
+}
+.menu-section li:hover {
+    color: #2895f1;
+    cursor: pointer;
+}
+.menu-section li.select {
+    border-left: 5px solid #2895f1;
+    color: #333;
+    padding-left: 15px;
+}
+
+.result-section {
+    padding-right: 10px;
+}
+.result-item {
+    padding: 0 15px 20px 36px;
+    background: white;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+.result-item p {
+    line-height: 20px;
+}
+.link,
+.url {
+    margin-bottom: 8px;
+}
+.result-item h3 a {
+    color: #629c44;
+    font-size: 14px;
+}
+.result-item h3 a:hover {
+    border-bottom: 1px solid rgba(98, 156, 68, 0.3);
+}
+.result-item:last-child {
+    margin-bottom: 0;
+}
+.favicon {
+    position: relative;
+    top: 20px;
+    left: -25px;
+}
+.favicon-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/favicons.png);
+}
+
+/* NAVIGATION */
+
+.nav {
+    padding: 25px 0;
+}
+.nav-section {
+    background: white;
+    width: 290px;
+    border: 1px solid #ccc;
+    border-radius: 37px;
+}
+.nav-section li {
+    display: inline-flex;
+    padding: 11px 17px 11px 13px;
+    border-right: 1px solid #ccc;
+}
+.nav-section li:hover {
+    color: #2895f1;
+    cursor: pointer;
+}
+.nav-section li:first-child {
+    padding-left: 20px;
+}
+.nav-section li:last-child {
+    border: none;
+}
+.nav-section li.select {
+    background: #2895f1;
+    color: white;
+    border-top-left-radius: 37px;
+    border-bottom-left-radius: 37px;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 40px 30px;
+    line-height: 18px;
+}
+.footer p {
+    color: #808080;
+    font-size: 11px;
+}
+.footer .new-section {
+    display: flex;
+}
+.logo-bottom path {
+    fill: #aaa;
+}
+.footer .new-section p {
+    padding-left: 10px;
+}
+.footer .copy-section p {
+    text-align: right;
+}
+
+
+/*============== MOBILE ==================*/
+
+/* <-- 750 PX --> */
+
+@media (max-width: 750px) {
+    .empty {
+        display: none;
+    }
+    .sub {
+        display: none;
+    }
+    .header {
+        padding-bottom: 0;
+    }
+    .header,
+    .main,
+    .nav,
+    .footer {
+        min-width: 400px;
+    }
+    .account-section .avatar {
+        width: 30px;
+        height: 30px;
+    }
+    .header .account-section {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+    .header .account-section p {
+        line-height: 30px;
+    }
+    .logo-section form {
+        display: block;
+        padding: 15px 0 5px 0;
+    }
+    .logo-section input[type="text"] {
+        height: 40px;
+        width: 80%;
+    }
+    .logo-section input[type="button"] {
+        height: 40px;
+        width: 20%;
+        line-height: 36px;
+    }
+    .menu-section {
+        background: white;
+        padding: 0 28px;
+        margin-bottom: 10px;
+    }
+    .menu-section li {
+        display: inline-block;
+        font-size: 14px;
+    }
+    .menu-section li.select {
+        padding-left: 0;
+        border-left: 0;
+        border-bottom: 5px solid #2895f1;
+    }
+    
+    .res-res {
+        padding: 0 10px;
+    }
+    .main .col {
+        float: none;
+    }
+    .result-section {
+        display: table-row-group;
+        padding: 0;
+    }
+    .rest-section {
+        display: table-caption;
+        margin-bottom: 10px;
+    }
+    
+    .rest .rate {
+    height: 50px;
+    width: 50px;
+    border: 3px solid #27be14;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 14px 8px 8px 10px;
+    position: absolute;
+    top: 15px;
+    right: 10%;
+    }
+    
+    .nav-section {
+        float: none;
+        margin: 0 auto;
+    }
+    .footer .new-section {
+        display: none;
+    }
+    .footer .copy-section p {
+        text-align: center;
+    }
+    
+    /* <-- 530 PX --> */
+
+@media (max-width: 530px) {
+
+    .rest .rate {
+    height: 35px;
+    width: 35px;
+    border: 2px solid #27be14;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 8px 8px 8px 6px;
+    position: absolute;
+    top: 10px;
+    left: 87%;
+}
+ 
+}
